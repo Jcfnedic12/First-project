@@ -1,0 +1,482 @@
+@import url(https://fonts.googleapis.com/css?family=Fresca:regular);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*,*::after, *::before{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+:root{
+  --primaryColor: white;
+  --secondaryColor:#208C55;
+  --highlighColor:#005C85;
+  --dimmedText: rgb(61, 56, 56);
+}
+body{
+  /* max-width: 1600px;
+  max-height:800px; */
+  
+  background-color: #F7F7F7;
+  font-family: 'Noto sans', sans-serif;
+}
+
+h1{
+  font-size: clamp(.9rem, 4vw, 3rem);
+  font-weight: 700;
+
+  color: var(--secondaryColor);
+  
+}
+
+.homeHeader{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  width: 100%;
+  max-width: 1600px;
+  flex-flow: row nowrap;
+  background-color:var(--secondaryColor);
+  padding-inline: clamp(2.7rem, 4vw, 6rem);
+  height: 3.5rem;
+  color: var(--primaryColor); 
+  box-shadow: 0 1px 4px 1px rgba(150, 150, 150, 0.649);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  
+}
+
+.homeHeader .headerNavbar ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-evenly;
+  align-items:center;
+  gap: clamp(.8rem, 3vw, 3rem);
+
+}
+.homeHeader .headerNavbar ul li{
+  list-style: none;
+}
+.homeHeader .headerNavbar ul li a{
+  text-decoration: none;
+  color: var(--primaryColor);
+
+  font-size: clamp(.4rem, 1.5vw, .9rem);
+  transition: all 0.3s ease-in-out;
+}
+.homeHeader .headerNavbar ul li a:hover{
+  
+  color: rgba(224, 217, 217, 0.853);
+  transform: scale(1.5);
+}
+
+.headerLogSignup{
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+  align-items:center;
+  justify-content:space-around
+}
+
+.headerLogSignup a{
+  text-decoration: none;
+  color: var(--primaryColor);
+  font-size: clamp(.4rem, 1.7vw, .9rem);
+  line-height: 1.7vw;
+
+}
+
+.headerLogSignup a:nth-child(2){
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid var(--primaryColor);
+  padding-inline: 10px;
+  padding-block: 3px;
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+  margin-top:2.7px;
+  transition: all 0.3s ease-in-out;
+}
+.headerLogSignup a:nth-child(2):hover{
+  color: var(--secondaryColor);
+  background-color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  
+}
+
+/* splash part */
+
+.splash {
+  padding-top:56px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  max-width: 1440px;
+  
+  
+}
+.splash>*{
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.splashImage{
+  position: relative;
+  z-index: 0;
+}
+
+.splashImage::after{
+  content: " ";
+  background:  linear-gradient(90deg, transparent 75%, rgba(255, 255, 255, 0.5) 99%),url(/cssjsfolder/splashhigh.jpg);
+
+  opacity: 0.8;
+ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+}
+
+.splashTExt{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:center;
+  align-items: right;
+  padding-inline: 10em;
+  gap: 20px;
+}
+.splashTExt h1{
+  font-size: clamp(.9rem, 4vw, 3rem);
+  font-weight: 900;
+  color: #017030;
+}
+.splashTExt h3{
+  font-size: clamp(.9rem, 3vw, 2.2rem);
+  font-weight: 700;
+  
+}
+
+.splashTExt p{
+  font-size: clamp(.9rem, 1vw, 1.2rem);
+  font-weight: 200;
+}
+
+.splashTExt a{
+  
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  border-radius: 3px;
+  border: none;
+  background-color: var(--secondaryColor);
+  text-decoration: none;
+  height:200px;
+  width: 500px;
+  max-width: 130px;
+  height: 40px;
+  
+
+  color: whitesmoke;
+}
+
+.splashTExt a:hover{
+  background-color: #147c47;
+}
+
+/* Cards section */
+
+
+.OfferCards{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: clamp(3em, 7vw, 7em);
+
+  
+}
+
+.Title{
+  margin-bottom: 10px;
+
+}
+
+.Title h1{
+  font-size: clamp(.9rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--secondaryColor);
+  padding-left: 4px;
+  border-left: 4px solid var(--secondaryColor);
+  }
+
+.cardMainContainer{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 90vh;
+  max-height: 500px;
+}
+.cardContainer img{
+  outline: none;
+  width: 100%;
+  height: 100%;
+} 
+
+.cardContainer{
+
+  border-radius: 2px;
+  overflow: hidden;
+
+
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 400px;
+
+  min-width: 100px;
+  min-height: 200px;
+
+ position: relative;
+ z-index:3;
+  
+ display: flex;
+ flex-flow: column wrap;
+ align-items: center;
+ justify-content: space-between;
+
+ box-shadow: 0 0 4px 2px rgba(204, 198, 198, 0.229);
+ 
+ transition: all 0.9s ease-in-out;
+
+}
+
+/* .cardContainer:hover::after {
+  transform: scale(1.1);
+  background-position: top center;
+} */
+.cardContainer:hover{
+
+  transform: scale(1.04);
+}
+.cardContainer>*{
+  width: 100%; 
+
+  position: relative;
+  z-index: 2;
+  
+  
+}
+
+
+
+.cardMainContainer .cardContainer:nth-of-type(2)::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background:url(./card1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  opacity:0.8;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 400px;
+
+  min-width: 100px;
+  min-height: 200px;
+
+  transition: all 0.5s ease-in-out;
+
+  
+}
+
+.cardMainContainer .cardContainer:nth-of-type(1)::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background:url(./card3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position:  center;
+  opacity:0.8;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 400px;
+
+  min-width: 100px;
+  min-height: 200px;
+  
+
+  transition: all 0.8s ease-in-out;
+
+  
+}
+
+.cardMainContainer .cardContainer:nth-of-type(3)::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background:url(./card2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  opacity:0.8;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 400px;
+
+  min-width: 100px;
+  min-height: 200px;
+
+  transition: all 0.4s ease-in-out;
+  
+
+}
+
+.cardTextContainer{
+  padding: 20px 20px 0 20px;
+  position: relative;
+  height: 40%;
+  z-index: 1;
+}
+.cardTextContainer h2{
+  margin-bottom:10px;
+  color: var(--secondaryColor);
+}
+
+.cardTextContainer p{
+  color: var(--dimmedText);
+  font-size: clamp(.2rem, 3vw, .8rem);
+}
+.cardTextContainer>*{
+  
+  position: relative; 
+  z-index: 1;
+}
+
+.cardTextContainer::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #017030;
+  opacity: 0.25;
+
+}
+
+
+/* partners section */
+
+.partners{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:center;
+  align-items:center;
+  gap: 5%;
+  width: 100vw;
+  max-width: 1600px;
+}
+
+.partnersTitleDiv{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  margin-block-end: 6%;
+  font-size: clamp(.9rem, 4vw, 3rem);
+  font-weight: 700;
+  
+}
+.partnersTitleDiv h1{
+  border-right: 4px solid var(--secondaryColor);
+  padding-right: 7px;
+}
+
+.partners>*{
+  width: 100%;
+}
+
+.partnersContainer{
+  width:100%;
+  display: inline-flex;
+  align-items:center;
+  justify-content:center;
+  
+  max-width: 1000px;
+  max-height:400px;
+  padding-inline: 2%;
+  overflow: hidden;
+
+}
+.partnersContainer:nth-of-type(3){
+  flex-flow: row-reverse wrap;
+}
+.partnersContainer>*{
+  width: 50%;
+  
+}
+
+.partnerImagePart, .partnerImagePart img{
+  overflow: hidden;
+}
+.partnersContainer .partnerImagePart img{
+  width: 100%;
+  height: 100vh;
+
+  max-height:300px;
+
+}
+
+/* media queries */
+
+@media (max-width:768px) {
+  
+  .cardMainContainer{
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    gap: 20px;
+  }
+
+  .splashTExt{
+    padding-inline: 20px;
+  }
+
+  .OfferCards{
+    padding: 20px;
+  }
+}

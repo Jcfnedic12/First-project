@@ -1,0 +1,114 @@
+:root{
+  --primaryColor: white;
+  --secondaryColor:rgba(59, 59, 187, 0.93);
+
+}
+
+*, *:after, *:before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+.backgroundpart{
+  width:100%;
+  height:100vh;
+  background: linear-gradient(320deg, rgba(0, 0, 0, 0.767), rgba(128, 128, 128, 0.805));
+ 
+
+  max-width: 1600px;
+  max-height:800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.formcontainer{
+  width:95vw;
+  height:60vh;
+
+  max-width:400px;
+  max-height:600px;
+
+  border-radius:2px;
+  background-color:white;
+
+  position: relative;
+  
+}
+
+.loginclass{
+  height:100%;
+  width:100%;
+  
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:center;
+  align-items:center;
+
+
+}
+
+.formLogin{
+  margin-bottom:20px;
+  font-weight: 700;
+}
+
+.formForErrorLogin{
+  margin-bottom:10px;
+
+}
+
+.formInputGroup{
+  margin-bottom:15px;
+}
+
+.formInputUsername, .formInputPassword{
+  outline: none;
+  border: 1px solid rgb(208, 208, 208);
+  border-radius: 1px;
+  width:80vw;
+  height: 60vh;
+  padding-inline: 15px;
+  line-height: 30px;
+  background-color: rgba(245, 245, 245, 0.915);
+
+  max-width:300px;
+  max-height: 30px;
+}
+
+.FormInputBtn .InputBtn{
+  width:80vw;
+  height: 60vh;
+  max-width:300px;
+  max-height: 30px;
+
+  outline: none;
+  border-radius: 1px;
+  border: none;
+  background-color:var(--secondaryColor);
+  color: var(--primaryColor);
+
+  cursor: pointer;
+}
+
+.forgotPassdiv, .signUpLinkdiv{
+  margin-top:10px;
+}
+
+.forgotPassdiv p a span, .signUpLinkdiv p a{
+  color: black;
+}
+
+.forgotPassdiv p a, .signUpLinkdiv p a{
+  text-decoration: none;
+}
+
+
+
+.formInputUsernameMessage, .formInputPasswordMessage, .formForErrorLogin{
+  display: none;
+}
