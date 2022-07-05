@@ -7,27 +7,35 @@
   <title>Homepage</title>
   <link rel="stylesheet" href="./cssjsfolder/homestyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./cssjsfolder/main.js" defer></script>
   
 </head>
 <body>
   <header class="homeHeader">
     <div class="Logo"><h2>John Nedic</h2></div>
-    <div class="headerNavbar">
-      <ul>
-        <li class="list1"><a href="#">HOME</a></li>
-        <li class="list2"><a href="#">OFFERS</a></li>
-        <li class="list3"><a href="#">PARTNERS</a></li>
-        <li class="list4"><a href="#">ABOUT US</a></li>
-      </ul>
+    <div class="ContainerforMobile ContainerforMobileDisappear">
+      <div class="headerNavbar">
+        <ul>
+  
+          <li class="list1 "><a href="#home" class="refStyler" >HOME</a></li>
+          <li class="list2 "><a href="#offers" class="refStyler">OFFERS</a></li>
+          <li class="list3 "><a href="#partners" class="refStyler" >PARTNERS</a></li>
+          <li class="list4 "><a href="#aboutus" class="refStyler">ABOUT US</a></li>
+        </ul>
+      </div>
+      <div class="headerLogSignup">
+        <a href="#" class="refStyler">Login</a>
+        <a href="#" class="refStyler">Create Account</a>
+      </div>
     </div>
-    <div class="headerLogSignup">
-      <a href="">Login</a>
-      <a href="">Create Account</a>
+    <div class="hamburgerSide">
+      <button>
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
     </div>
-
   </header>
 
-  <section class="splash">
+  <section class="splash" id="home">
     <div class="splashImage">
      
     </div>
@@ -39,8 +47,8 @@
     </div>
 
   </section>
-  <section class="OfferCards">
-    <div class="Title">
+  <section class="OfferCards" id="offers">
+    <div class="Title" >
       <h1>Best Products</h1>
     </div>
     <div class="cardMainContainer">
@@ -73,7 +81,7 @@
     </div>
   </section>
 
-  <section class="partners">
+  <section class="partners" id="partners">
     <div class="partnersTitleDiv"><h1>Best locations</h1></div>
     <div class="partnersContainer">
       <div class="partnerImagePart"><img src="./cssjsfolder/partners1.jpg" alt=""></div>
@@ -85,6 +93,7 @@
     <div class="partnersContainer">
       <div class="partnerImagePart"><img src="./cssjsfolder/partners2.jpg" alt=""></div>
       <div class="partnerTextPart">
+        
         <h2>Work Environment</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni aliquam aperiam sapiente quibusdam eligendi aspernatur ad tenetur reiciendis? Omnis excepturi accusamus libero facilis aspernatur cum recusandae quisquam asperiores expedita molestias!</p>
       </div>
@@ -97,6 +106,130 @@
       </div>
     </div>
   </section>
+
+            <!-- ABOUT US SECTION -->
+  <section class="aboutus" id="aboutus"> 
+    <div class="HeadingAboutUs">
+      
+      <h1>About Us</h1>
+      
+    </div>
+    <div class="containerAboutUs">
+
+      <div class="mainAboutUs">
+        <div class="clipPath1">
+          <div class="clipPath1Content">
+            <div class="clipcontentcontainerbasis clipcontentcontainer clipcontentcontainer1">
+              <div>
+
+                <h2 class="cliph1">Staff</h2>
+              </div>
+              <p class="clipParagrap1">We make sure that our employees are fully prepared to help you choose your options. <span class="border"></span></p>
+            </div>
+            
+            
+          </div>
+        </div>
+        <div class="clipPath2">
+          <div class="clipPath2Content">
+            <div class="clipcontentcontainerbasis clipcontentcontainer clipcontentcontainer2">
+
+              <div>
+                <h2 class="cliph2">Service</h2>
+              </div>
+              <p class="clipParagrap2">We value our customer like no other.</br> We cater with best service we could possibly give. <span class="border"></span></p>
+            </div>
+          </div>
+         </div>
+         <div class="clipPath3">
+          <div class="clipPath3Content">
+            
+            <div class="clipcontentcontainerbasis clipcontentcontainer clipcontentcontainer3">
+
+              <div>
+
+                <h2 class="cliph3">Effort</h2>
+              </div>
+              <p class="clipParagrap3">Efforts is our selling point, making sure that you get the best of what you bought for. <span class="border"></span></p>
+            </div>
+          </div>
+         </div>
+      </div>
+      <div class="sidbeBar">
+        <div class="comments">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cumque sit nobis ut nihil impedit tempora repellat. Reiciendis voluptatem ad doloribus explicabo voluptas, deserunt voluptates cupiditate nesciunt? Hic, ipsam autem?</p>
+          <div>
+            <h5>- Josephine</h5>
+            <img src="" alt="Person's icon">
+          </div>
+        </div>
+        <div class="comments">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cumque sit nobis ut nihil impedit tempora repellat. Reiciendis voluptatem ad doloribus explicabo voluptas, deserunt voluptates cupiditate nesciunt? Hic, ipsam autem?</p>
+          <div>
+            <h5>- Cecilion</h5>
+            <img src="" alt="Person's icon">
+          </div>
+        </div>
+        <div class="comments">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cumque sit nobis ut nihil impedit tempora repellat. Reiciendis voluptatem ad doloribus explicabo voluptas, deserunt voluptates cupiditate nesciunt? Hic, ipsam autem?</p>
+          <div>
+            <h5>- Charles</h5>
+            <img src="" alt="Person's icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   
+  
+   <!-- CONTACT SECTION -->
+
+  <footer class="contacts">
+    <div class="contactContainer">
+      <div class="contactCardContainer">
+        <div class="titleFooter">
+          <h3>Contact Us</h3>
+        </div>
+        <div class="contactUsLinks">
+
+          <p><span><i class="fas fa-mobile-retro"></i></span> +6308214578</p>
+          <p><span><i class="fas fa-phone"></i></span> +12365478954</p>
+        </div>
+      </div>
+      <div class="contactCardContainer">
+        <div class="titleFooter">
+          <h3>Social links</h3>
+        </div>
+        <div class="socialLinks">
+
+          <a href="#"><span><i class="fab fa-facebook-f"></i></span><span class="linkText Facebook">Facebook</span>  </a>
+          <a href="#"><span><i class="fab fa-instagram"></i></span> <span class="linkText">instagram</span></a>
+          <a href="#"><span><i class="fab fa-twitter"></i></span> <span class="linkText twitter">Twitter</span></a>
+        </div>
+      </div>
+      <div class="contactCardContainer lastChild">
+        <div class="titleFooter">
+          <h3>Directions</h3>
+        </div>
+        <div class="navigationLinks">
+
+          <div>
+            <h4>Main Office:</h4>
+            <a href="#">#92 pampang St. Solorica 8, Geneve, Calcutan</a>
+
+          </div>
+          <div>
+            <h4 >Branches:</h4>
+            <a href="#">SinagKuma branch</a>
+            <a href="#">Sikalore branch</a>
+            <a href="#">PottedRed branch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyrighting">
+      <p><span>©</span>All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
