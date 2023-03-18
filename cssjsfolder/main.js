@@ -202,6 +202,17 @@ hamburgerSide.addEventListener('click',(e)=>{
 })
 
 
+  const listStyleManipulation =(reference, index)=>{
+
+    reference.forEach((elem, refIndex)=>{
+       elem.classList.remove('listStyle'); 
+
+      if(refIndex == index){
+        elem.classList.add('listStyle');
+      }
+    })
+  }
+
 // list style js
 
 refStyler.forEach(list=>{
@@ -218,7 +229,7 @@ refStyler.forEach(list=>{
     ContainerforMobile.classList.toggle("ContainerforMobileDisappear")
   })
 })
-console.log(refStyler)
+
 window.addEventListener('scroll',(e)=>{
   const scrollChecker = window.scrollY
   console.log(scrollChecker)
@@ -227,45 +238,68 @@ window.addEventListener('scroll',(e)=>{
     if(refStyler[0].classList.contains('listStyle')==false){
       refStyler[0].classList.add('listStyle');
     }
-    refStyler[1].classList.remove('listStyle');
-    refStyler[2].classList.remove('listStyle');
-    refStyler[3].classList.remove('listStyle');
-    refStyler[04].classList.remove('listStyle');
-    refStyler[05].classList.remove('listStyle');
+    // refStyler[1].classList.remove('listStyle');
+    // refStyler[2].classList.remove('listStyle');
+    // refStyler[3].classList.remove('listStyle');
+    // refStyler[04].classList.remove('listStyle');
+    // refStyler[05].classList.remove('listStyle');
+
+    // refStyler.forEach((elem) =>{
+    //     elem.classList.remove('listStyle');
+    // })
+
+    listStyleManipulation(refStyler);
+    
 
   }
   if (scrollChecker >=440 && scrollChecker<960) {
     if(refStyler[1].classList.contains('listStyle')==false){
       refStyler[1].classList.add('listStyle');
     }
-    refStyler[0].classList.remove('listStyle');
-    refStyler[2].classList.remove('listStyle');
-    refStyler[3].classList.remove('listStyle');
-    refStyler[04].classList.remove('listStyle');
-    refStyler[05].classList.remove('listStyle');
+
+    // **************DRY CODE( DO NOT REPEAT YOURSELF)*********
+    // **************DRY CODE( DO NOT REPEAT YOURSELF)*********
+    // refStyler[0].classList.remove('listStyle');
+    // refStyler[2].classList.remove('listStyle');
+    // refStyler[3].classList.remove('listStyle');
+    // refStyler[04].classList.remove('listStyle');
+    // refStyler[05].classList.remove('listStyle');
+    // ********************************************************
+    
+
+    // refStyler.forEach((elem, index) =>{
+    //   if (index != 1) {
+    //     elem.classList.remove('listStyle');
+    //       }
+    // })
+
+    listStyleManipulation(refStyler, 1);
 
   }
   if (scrollChecker >=960 && scrollChecker<1960) {
     if(refStyler[2].classList.contains('listStyle')==false){
       refStyler[2].classList.add('listStyle');
     } 
-    refStyler[0].classList.remove('listStyle');
-    refStyler[1].classList.remove('listStyle');
-    refStyler[3].classList.remove('listStyle');
-    refStyler[04].classList.remove('listStyle');
-    refStyler[05].classList.remove('listStyle');
+    // refStyler[0].classList.remove('listStyle');
+    // refStyler[1].classList.remove('listStyle');
+    // refStyler[3].classList.remove('listStyle');
+    // refStyler[04].classList.remove('listStyle');
+    // refStyler[05].classList.remove('listStyle');
+
+    listStyleManipulation(refStyler, 2);
 
   }
   if (scrollChecker >=2000 && scrollChecker<2978.39990234375) {
     if(refStyler[3].classList.contains('listStyle')==false){
       refStyler[3].classList.add('listStyle');
     } 
-    refStyler[0].classList.remove('listStyle');
-    refStyler[1].classList.remove('listStyle');
-    refStyler[2].classList.remove('listStyle');
-    refStyler[04].classList.remove('listStyle');
-    refStyler[05].classList.remove('listStyle');
+    // refStyler[0].classList.remove('listStyle');
+    // refStyler[1].classList.remove('listStyle');
+    // refStyler[2].classList.remove('listStyle');
+    // refStyler[04].classList.remove('listStyle');
+    // refStyler[05].classList.remove('listStyle');
 
+    listStyleManipulation(refStyler, 3);
   }
 })
 
